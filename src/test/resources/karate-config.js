@@ -1,6 +1,9 @@
 function fn() {
+    var env = karate.env || 'dev';
+    karate.log('karate.env system property was:', env);
+
     var config = {
-        baseUrl: 'http://51.44.133.5:81',
+        baseUrl: 'http://51.44.133.5:81/swagger',
         credentials: {
             admin: {
                 username: 'Admin',
@@ -14,6 +17,10 @@ function fn() {
                 username: 'SiteResident',
                 password: '12345678'
             }
+        },
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         }
     };
 
