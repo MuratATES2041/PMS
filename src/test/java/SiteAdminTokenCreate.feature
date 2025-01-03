@@ -3,7 +3,7 @@ Feature: SiteAdminToken Create
   Scenario: SiteAdminToken
     Given url "http://51.44.133.5:81/swagger"
     And path "/gateway/gateway/site-admin/login"
-    And request {"username": "SiteAdmin", "password": "12345678"}
+    And request {"username": "**********", "password": "*********"}
     And header Content-Type = "application/json"
     When method post
     Then status 200
