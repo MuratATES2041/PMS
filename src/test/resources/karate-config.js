@@ -6,16 +6,16 @@ function fn() {
         baseUrl: 'http://51.44.133.5:81/swagger',
         credentials: {
             admin: {
-                username: 'Admin',
-                password: 'Ad12345678in.'
+                username: '********',
+                password: '*********'
             },
             siteAdmin: {
-                username: 'SiteAdmin',
-                password: '12345678'
+                username: '****',
+                password: '******'
             },
             siteResident: {
-                username: 'SiteResident',
-                password: '12345678'
+                username: '******',
+                password: '***********'
             }
         },
         headers: {
